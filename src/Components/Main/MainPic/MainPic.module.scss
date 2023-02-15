@@ -1,0 +1,11 @@
+.imagem {
+  width: 550px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 375px) {
+    width: 375px;
+    height: auto;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}

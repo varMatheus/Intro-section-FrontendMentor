@@ -1,0 +1,82 @@
+@import '../../_variaveis.scss';
+
+.menu__container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  order: 2;
+
+  @media screen and (max-width: 375px) {
+    padding: 1rem;
+  }
+
+  &__nav {
+    display: flex;
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  &__divL {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__item {
+    padding: 0 1.5rem;
+    font-weight: 400;
+    font-size: $font-size;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: $grey;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $black;
+      cursor: pointer;
+    }
+  }
+
+  &__divR {
+    display: flex;
+    gap: 1.5rem;
+
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  &__user {
+    border: none;
+    background-color: $white;
+    font-size: $font-size;
+    padding: 0 1.5rem;
+    color: $grey;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $black;
+      cursor: pointer;
+    }
+
+    &__R {
+      border: 2px solid $grey;
+      background-color: $white;
+      font-size: $font-size;
+      padding: .5rem 1.7rem;
+      border-radius: .8rem;
+      color: $grey;
+    
+      &:hover {
+        color: $black;
+        border-color: $black;
+        cursor: pointer;
+      }
+    }
+  }
+}
